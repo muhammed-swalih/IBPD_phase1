@@ -30,10 +30,10 @@ function Enquiry() {
     // Send email using EmailJS
     emailjs
       .send(
-        "service_av24xhq",
-        "template_hu8p7tq",
+        "service_h9osk7f",
+        "template_91bdiom",
         formData,
-        "esYjuOv7JnNBk1gel"
+        "CWNvrZwvNHhOWoN6L"
       )
       .then(
         (response) => {
