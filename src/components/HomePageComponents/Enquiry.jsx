@@ -38,6 +38,12 @@ function Enquiry() {
       .then(
         (response) => {
           console.log("Email sent successfully:", response);
+          setFormData({
+            name: "",
+            email: "",
+            mobile: "",
+            message: "",
+          });
           // Handle success
         },
         (error) => {
