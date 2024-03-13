@@ -1,5 +1,5 @@
 import React from "react";
-import bg from "../../assets/webp/home_bg.webp";
+import bg from "../../assets/homebg.webp";
 import LOGO from "../../assets/IBPD_LOGO.webp";
 import bookMark from "../../assets/bookmark.png";
 import Navbar from "../Navbar";
