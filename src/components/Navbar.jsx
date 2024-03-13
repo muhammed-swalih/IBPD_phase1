@@ -51,10 +51,30 @@ function Navbar() {
               </svg>
               <div className="absolute bottom-0  w-full h-full flex items-center justify-center text-white">
                 <div className=" flex gap-8 items-center">
-                  <span onClick={navToHome}>Home</span>
-                  <span onClick={navToAbout}>About us</span>
-                  <span onClick={navToPartner}>Partners</span>
-                  <span onClick={navToPrograms}>Programs</span>
+                  <span
+                    className=" hover:text-blue-200 cursor-pointer hover:underline"
+                    onClick={navToHome}
+                  >
+                    Home
+                  </span>
+                  <span
+                    className=" hover:text-blue-200 cursor-pointer hover:underline"
+                    onClick={navToAbout}
+                  >
+                    About us
+                  </span>
+                  <span
+                    className=" hover:text-blue-200 cursor-pointer hover:underline"
+                    onClick={navToPartner}
+                  >
+                    Partners
+                  </span>
+                  <span
+                    className=" hover:text-blue-200 cursor-pointer hover:underline"
+                    onClick={navToPrograms}
+                  >
+                    Programs
+                  </span>
                 </div>
               </div>
             </div>
