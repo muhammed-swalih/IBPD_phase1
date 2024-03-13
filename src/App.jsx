@@ -10,6 +10,7 @@ import "@fontsource/poppins/400-italic.css"; // Specify weight and style
 import AboutUsPage from "./pages/AboutUsPage";
 import PartnerPage from "./pages/PartnerPage";
 import Programs from "./components/Programs";
+import Contactus from "./components/Contactus";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
             <Route path="/about" element={<AboutUsPage />} />
             <Route path="/partner" element={<PartnerPage />} />
             <Route path="/programs" element={<Programs />} />
+            <Route path="/contact" element={<Contactus />} />
           </Routes>
         </BrowserRouter>
       </div>

@@ -8,6 +8,7 @@ import Global from "../components/HomePageComponents/Global";
 import TailoredSupport from "../components/HomePageComponents/TailoredSupport";
 import Enquiry from "../components/HomePageComponents/Enquiry";
 import Footer from "../components/Footer";
+import OurCorePillers from "../components/OurCorePillers";
 
 function HomePage() {
   return (
@@ -17,8 +18,10 @@ function HomePage() {
       <HomeAboutUs />
       <WhatIBPDHas />
       <NoMatterHowFar />
+
       <Global />
-      <Enquiry />
+      <OurCorePillers />
+
       <Footer />
     </div>
   );
