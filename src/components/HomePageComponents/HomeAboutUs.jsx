@@ -32,18 +32,18 @@ function HomeAboutUs() {
   return (
     <div className=" w-full h-auto bg-[#EBEBEB] pt-24  pb-20">
       <div className=" flex items-center ">
-        <div className=" flex items-center justify-start">
-          <div className=" w-[700px] h-96 bg-white z-50 ">
+        <div className=" flex items-center justify-between">
+          <div className=" w-[700px] h-[420px] bg-white z-50 ">
             <img className=" w-full h-full object-cover" src={one} alt="" />
           </div>
           <div className=" relative z-50">
             <svg
               className="ml-[-200px] flex justify-end w-[941px] "
               xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 1081 525"
+              viewBox="0 0 1037 530"
               fill="none"
             >
-              <path d="M0 524.5L147.5 0H1081L1080.5 524.5H0Z" fill="black" />
+              <path d="M141 0H1036.5V530H0L141 0Z" fill="black" />
             </svg>
             <div className=" absolute bottom-0  w-full h-full flex items-center justify-start text-white ">
               <div className=" flex flex-col gap-5 pl-10">
