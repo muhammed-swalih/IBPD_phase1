@@ -6,8 +6,8 @@ import Footer from "../Footer";
 function PartnerLandingPage() {
   return (
     <div
-      className=" w-full h-screen "
-      style={{ backgroundImage: `url(${partnerBg})`, backgroundSize: "cover" }}
+      className=" w-full h-screen bg-cover "
+      style={{ backgroundImage: `url(${partnerBg})` }}
     >
       <Navbar />
       <div className=" text-white w-full h-full flex items-center justify-center">
