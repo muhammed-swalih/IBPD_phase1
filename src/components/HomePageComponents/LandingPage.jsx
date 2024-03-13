@@ -1,6 +1,5 @@
 import React from "react";
 import bg from "../../assets/homebg.webp";
-import LOGO from "../../assets/IBPD_LOGO.webp";
 import bookMark from "../../assets/bookmark.png";
 import Navbar from "../Navbar";
 function LandingPage() {
@@ -10,8 +9,8 @@ function LandingPage() {
         className="w-full h-screen bg-cover  md:w-full md:h-screen md:bg-cover md:relative "
         style={{ backgroundImage: `url(${bg})`, backgroundSize: "cover" }}
       >
-        <Navbar />
         <div className=" w-full h-full absolute ">
+          <Navbar />
           <div className="w-full flex flex-col ">
             <div className=" h-screen  flex w-full ">
               <div className=" w-full  mt-36  flex flex-col gap-10 items-start justify-center  md: ">
