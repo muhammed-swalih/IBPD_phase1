@@ -6,7 +6,7 @@ import Footer from "../Footer";
 function AboutLanding() {
   return (
     <div
-      className=" w-full h-screen bg-black"
+      className=" w-full h-screen bg-cover bg-black"
       style={{ backgroundImage: `url(${aboutBg})`, backgroundSize: "cover" }}
     >
       <Navbar />

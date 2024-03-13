@@ -25,7 +25,7 @@ function Programs() {
   return (
     <div className=" w-auto h-auto">
       <div
-        className=" w-full h-screen "
+        className=" w-full h-screen bg-cover"
         style={{
           backgroundImage: `url(${programsBg})`,
           backgroundSize: "cover",

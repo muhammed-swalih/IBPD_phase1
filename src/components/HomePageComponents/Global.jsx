@@ -5,8 +5,10 @@ function Global() {
     <div className=" w-full  flex flex-col gap-10 mt-10 pb-10 md:pb-0">
       <div className=" flex gap-3 items-center">
         <hr className=" w-[65px] border-black border-2" />
-        <h1 className=" text-3xl poppins-semibold ">Why Choose IBPD</h1>
-        <hr className=" border-black w-3/4 border-2 " />
+        <h1 className=" text-3xl poppins-semibold w-[350px]">
+          Why Choose IBPD
+        </h1>
+        <hr className=" border-black w-full border-2 " />
       </div>
       <div className="  flex gap-5 pl-10 md:px-20">
         {/* <div className=" w-[1px] h-[660px] bg-black  "></div> */}
