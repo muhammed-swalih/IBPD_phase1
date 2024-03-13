@@ -64,8 +64,8 @@ function Contactus() {
         style={{ backgroundImage: `url(${bg})`, backgroundSize: "cover" }}
       >
         <Navbar />
-        <div className=" w-full h-screen pt-32 px-20">
-          <div className=" flex justify-between w-full text-white h-full items-center mt-16">
+        <div className=" w-full h-screen pt-32 flex items-center px-20">
+          <div className=" flex justify-between w-full text-white h-full items-center ">
             <div className=" flex flex-col gap-10">
               <h1 className=" text-6xl font-semibold">Contact us</h1>
               <div className=" flex flex-col gap- ">
