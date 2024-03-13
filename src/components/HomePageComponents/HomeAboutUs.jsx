@@ -32,13 +32,13 @@ function HomeAboutUs() {
   return (
     <div className=" w-full h-auto bg-[#EBEBEB] pt-24  pb-20">
       <div className=" flex items-center ">
-        <div className=" flex items-center justify-between">
-          <div className=" w-[700px] h-[420px] bg-white z-50 ">
+        <div className=" flex items-center justify-between w-full">
+          <div className=" w-full h-[430px] bg-white z-50 ">
             <img className=" w-full h-full object-cover" src={one} alt="" />
           </div>
           <div className=" relative z-50">
             <svg
-              className="ml-[-200px] flex justify-end w-[941px] "
+              className="ml-[-200px] mr-[-1px] flex justify-end w-[941px] "
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 1037 530"
               fill="none"
