@@ -23,7 +23,10 @@ function Navbar() {
     <div className=" w-full md:w-full md:h-full md:absolute ">
       <div className=" ">
         <div className=" bg-black flex items-center h-36 justify-between px-5 md:w-full md:bg-transparent md:h-full md:px-10 md:flex  md:justify-between">
-          <div className=" w-32   md:w-40 md:h-44 bg-black md:bg-opacity-75 md:flex md:items-center md:justify-center drop-shadow-lg">
+          <div
+            onClick={navToHome}
+            className=" w-32   md:w-40 md:h-44 bg-black md:bg-opacity-75 md:flex md:items-center md:justify-center drop-shadow-lg"
+          >
             <img src={LOGO} alt="" className="w-52 h-52 object-cover" />
           </div>
           <div className=" text-white md:hidden ">
