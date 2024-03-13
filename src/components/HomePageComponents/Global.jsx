@@ -3,12 +3,15 @@ import React from "react";
 function Global() {
   return (
     <div className=" w-full  flex flex-col gap-10 mt-10 pb-10 md:pb-0">
-      <div className=" flex gap-3 items-center">
-        <hr className=" w-[65px] border-black border-2" />
-        <h1 className=" text-3xl poppins-semibold w-[350px]">
-          Why Choose IBPD
-        </h1>
-        <hr className=" border-black w-full border-2 " />
+      <div className=" flex gap-5 items-center w-full justify-center md:justify-start">
+        <hr className=" border-black border-2 w-[55px] hidden md:block" />
+        <div className=" flex flex-col gap-5 ">
+          <h1 className=" text-2xl md:text-4xl w-[330px] text-[#303030] font-semibold px-10 md:px-0 text-center md:text-start">
+            Why choose IBPD
+          </h1>
+          <hr className=" border-gray-300  md:hidden" />
+        </div>
+        <hr className=" border-black  border-2 w-full hidden md:block" />
       </div>
       <div className="  flex gap-5 pl-10 md:px-20">
         {/* <div className=" w-[1px] h-[660px] bg-black  "></div> */}

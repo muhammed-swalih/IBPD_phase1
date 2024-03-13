@@ -1,9 +1,52 @@
 import { TextField } from "@mui/material";
 import { TextareaAutosize } from "@mui/base";
-import React from "react";
+import React, { useState } from "react";
 import { useMediaQuery } from "@react-hook/media-query";
+import emailjs from "emailjs-com";
 
 function Enquiry() {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    mobile: "",
+    message: "",
+    to_name: "IBPD", // You can set a default value or change dynamically
+    from_name: "", // Set it as the user's name or leave it empty
+  });
+
+  formData.from_email = formData.email;
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+      from_name: formData.name, // Set from_name to the user's name
+    });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    // Send email using EmailJS
+    emailjs
+      .send(
+        "service_av24xhq",
+        "template_hu8p7tq",
+        formData,
+        "esYjuOv7JnNBk1gel"
+      )
+      .then(
+        (response) => {
+          console.log("Email sent successfully:", response);
+          // Handle success
+        },
+        (error) => {
+          console.error("Email sending failed:", error);
+          // Handle error
+        }
+      );
+  };
+
   const isMobile = useMediaQuery("(max-width: 639px)");
   if (isMobile) {
     return (
@@ -84,6 +127,9 @@ function Enquiry() {
             <div className=" flex flex-col gap-3">
               <div className=" flex gap-5 items-center">
                 <TextField
+                  value={formData.name}
+                  onChange={handleChange}
+                  name="name"
                   label="Your name"
                   InputProps={{
                     style: {
@@ -100,6 +146,9 @@ function Enquiry() {
                   }}
                 />
                 <TextField
+                  value={formData.email}
+                  onChange={handleChange}
+                  name="email"
                   label="Email"
                   InputProps={{
                     style: {
@@ -116,6 +165,9 @@ function Enquiry() {
                   }}
                 />
                 <TextField
+                  value={formData.mobile}
+                  onChange={handleChange}
+                  name="mobile"
                   label="Mobile No"
                   InputProps={{
                     style: {
@@ -133,17 +185,23 @@ function Enquiry() {
                 />
               </div>
               <textarea
+                value={formData.message}
+                onChange={handleChange}
                 placeholder="message"
                 className=" bg-[#202020] text-white px-5 py-5 border border-1 border-white rounded-md w-[790px]"
-                name=""
+                name="message"
                 id=""
                 cols="30"
                 rows="10"
               ></textarea>
             </div>
-            <div className=" w-32 h-12 text-[#303030] flex items-center justify-center bg-white rounded-sm">
+            <button
+              type="submit"
+              onClick={handleSubmit}
+              className=" w-32 h-12 text-[#303030] flex items-center justify-center bg-white rounded-sm"
+            >
               <h1>Submit</h1>
-            </div>
+            </button>
           </div>
         </div>
       </div>
