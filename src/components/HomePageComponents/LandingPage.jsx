@@ -14,7 +14,7 @@ function LandingPage() {
           <div className="w-full ">
             <Navbar />
             <div className=" h-screen  flex w-full ">
-              <div className=" w-full h-[610px] mt-36  flex flex-col gap-10 items-start justify-end md:justify-center ">
+              <div className=" w-full  mt-36  flex flex-col gap-10 items-start justify-end md:justify-center ">
                 <div className=" w-full md:flex md:justify-start md:w-auto md:px-10 md:h-72 bg-black bg-opacity-50">
                   <div className=" flex flex-col gap-2 text-white">
                     <img
