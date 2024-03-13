@@ -7,15 +7,23 @@ import HomePage from "./pages/HomePage";
 import "@fontsource/poppins"; // Defaults to weight 400
 import "@fontsource/poppins/400.css"; // Specify weight
 import "@fontsource/poppins/400-italic.css"; // Specify weight and style
+import AboutUsPage from "./pages/AboutUsPage";
+import PartnerPage from "./pages/PartnerPage";
+import Programs from "./components/Programs";
 
 function App() {
   return (
     <>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-        </Routes>
-      </BrowserRouter>
+      <div className=" ">
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/about" element={<AboutUsPage />} />
+            <Route path="/partner" element={<PartnerPage />} />
+            <Route path="/programs" element={<Programs />} />
+          </Routes>
+        </BrowserRouter>
+      </div>
     </>
   );
 }

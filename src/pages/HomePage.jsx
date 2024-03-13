@@ -7,6 +7,7 @@ import NoMatterHowFar from "../components/HomePageComponents/NoMatterHowFar";
 import Global from "../components/HomePageComponents/Global";
 import TailoredSupport from "../components/HomePageComponents/TailoredSupport";
 import Enquiry from "../components/HomePageComponents/Enquiry";
+import Footer from "../components/Footer";
 
 function HomePage() {
   return (
@@ -17,8 +18,8 @@ function HomePage() {
       <WhatIBPDHas />
       <NoMatterHowFar />
       <Global />
-      <TailoredSupport />
       <Enquiry />
+      <Footer />
     </div>
   );
 }

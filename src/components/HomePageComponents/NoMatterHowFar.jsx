@@ -1,14 +1,42 @@
 import React from "react";
-import img from "../../assets/containr-two.webp";
-
+import img from "../../assets/webp/container_two.webp";
+import { useMediaQuery } from "@react-hook/media-query";
 function NoMatterHowFar() {
+  const isMobile = useMediaQuery("(max-width: 639px)");
+  if (isMobile) {
+    return (
+      <div className=" w-full h-auto">
+        <div className=" w-full h-72 ">
+          <img className=" w-full h-full object-cover" src={img} alt="" />
+        </div>
+        <div className=" w-full h-auto py-10 px-10 bg-black text-white">
+          <div className=" flex flex-col gap-3">
+            <h1 className=" text-2xl font-semibold">
+              No matter how far you’ve come, you can always go further
+            </h1>
+            <h1 className="  ">
+              Achieving global recognition and prestige is not just a testament
+              to the quality of education provided by accredited institutions
+              but also a strategic advantage that opens doors to numerous
+              opportunities for learners, faculties and the training partners
+              .Join IBPD, where every module, mentor, and connection is
+              meticulously designed to redefine what's possible in your
+              professional journey. Your potential is limitless, and IBPD is
+              here to help you unlock it. Ready to redefine your future? Join
+              IBPD and start your transformative professional journey today.
+            </h1>
+          </div>
+        </div>
+      </div>
+    );
+  }
   return (
     <div className=" w-full h-auto">
       <div className=" flex items-center justify-start">
         <div className=" relative">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="650"
+            width="750"
             height="550"
             viewBox="0 0 788 523"
             fill="none"
@@ -54,19 +82,23 @@ function NoMatterHowFar() {
               </filter>
             </defs>
           </svg>
-          <div className=" absolute bottom-0  w-full h-full flex items-center justify-center text-white ">
-            <div className=" flex flex-col gap-10">
-              <div className=" text-4xl font-semibold tracking-wide">
+          <div className=" absolute bottom-0  w-full h-full flex items-center justify-start text-white ">
+            <div className=" flex flex-col gap-5 pl-10">
+              <div className=" text-4xl font-semibold tracking-wide ">
                 <h1>No matter how far </h1>
                 <h1>you've come, you </h1>
                 <h1>can always go further </h1>
               </div>
-              <h1 className="  w-[500px]">
+              <h1 className="  w-[550px] leading-7 text-justify">
                 Achieving global recognition and prestige is not just a
                 testament to the quality of education provided by accredited
                 institutions but also a strategic advantage that opens doors to
                 numerous opportunities for learners, faculties and the training
-                partners{" "}
+                partners .Join IBPD, where every module, mentor, and connection
+                is meticulously designed to redefine what's possible in your
+                professional journey. Your potential is limitless, and IBPD is
+                here to help you unlock it. Ready to redefine your future? Join
+                IBPD and start your transformative professional journey today.
               </h1>
             </div>
           </div>
