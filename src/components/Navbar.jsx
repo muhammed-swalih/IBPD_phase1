@@ -19,6 +19,10 @@ function Navbar() {
   const navToPrograms = () => {
     navigate("/programs");
   };
+
+  const navToContact = () =>{
+    navigate("/contact")
+  }
   return (
     <div className=" w-full md:w-full md:h-full md:absolute ">
       <div className=" ">
@@ -74,6 +78,12 @@ function Navbar() {
                     onClick={navToPrograms}
                   >
                     Programs
+                  </span>
+                  <span
+                    className=" hover:text-blue-200 cursor-pointer hover:underline"
+                    onClick={navToContact}
+                  >
+                    Contact
                   </span>
                 </div>
               </div>

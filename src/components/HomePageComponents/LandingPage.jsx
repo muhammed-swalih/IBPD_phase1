@@ -25,7 +25,7 @@ function LandingPage() {
                     <div className=" gap-2 px-10 md:px-0 pb-10 flex flex-col md:gap-5 py-5 md:py-0">
                       <div className=" flex md:text-left flex-col text-2xl md:text-4xl md:tracking-wider md:leading-[45px] font-semibold">
                         <h1>Ignite your career,</h1>
-                        <h1> illuminate your future.</h1>
+                        <h1> illuminate your future</h1>
                       </div>
                       <h1 className=" w-[320px] text-sm md:text-base md:w-[500px] md:text-justify ">
                         Embark on a transformative experience with IBPD where

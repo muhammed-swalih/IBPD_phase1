@@ -204,7 +204,7 @@ function Enquiry() {
             <button
               type="submit"
               onClick={handleSubmit}
-              className=" w-32 h-12 text-[#303030] flex items-center justify-center bg-white rounded-sm"
+              className=" w-32 h-12 text-[#303030] flex items-center justify-center bg-white rounded-sm absolute cursor-pointer"
             >
               <h1>Submit</h1>
             </button>

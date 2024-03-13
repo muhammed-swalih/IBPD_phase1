@@ -2,7 +2,7 @@ import React from "react";
 
 function Global() {
   return (
-    <div className=" w-full  flex flex-col gap-10 mt-10 pb-10 md:pb-0">
+    <div className=" w-full  flex flex-col gap-10 mt-10 pb-10 md:pb-10">
       <div className=" flex gap-5 items-center w-full justify-center md:justify-start">
         <hr className=" border-black border-2 w-[55px] hidden md:block" />
         <div className=" flex flex-col gap-5 ">
