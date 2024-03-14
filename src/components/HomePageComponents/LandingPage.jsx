@@ -17,7 +17,7 @@ function LandingPage() {
         }}
       >
         <Navbar />
-        <div className=" h-2/4 flex items-center ">
+        <div className=" h-3/4 md:h-2/4 flex items-center ">
           <div className=" w-96  md:flex md:justify-start  md:w-[600px] md:px-10   md:h-72  bg-black bg-opacity-50 flex">
             <div className=" flex flex-col gap-2 text-white">
               <img
