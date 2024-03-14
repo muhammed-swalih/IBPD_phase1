@@ -102,7 +102,7 @@ function PartnerLandingPage() {
                   Eligibility Decision
                 </h1>
               </div>
-              <div className=" flex items-center gap-5 px-6 h-14 md:h-14 bg-black rounded-3xl">
+              <div className=" flex items-center gap-3 px-6 h-14 md:h-14 bg-black rounded-3xl">
                 <h1 className="  w-[53px] md:w-auto md:text-xl text-gray-300 ">
                   Step 4
                 </h1>

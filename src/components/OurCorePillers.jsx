@@ -88,7 +88,7 @@ function OurCorePillers() {
               Join IBPD and Redefine Your Professional Journey.
             </h1>
             <hr className=" w-full md:w-[830px] border-gray-600" />
-            <h1 className=" w-full text-justify md:w-[830px] text-white md:text-left">
+            <h1 className=" w-full  md:w-[830px] text-white md:text-left">
               Embark on a transformative experience with IBPD – where expertise
               meets aspiration, crafting futures of unparalleled success. Ignite
               your career, illuminate your future, and let IBPD be your gateway

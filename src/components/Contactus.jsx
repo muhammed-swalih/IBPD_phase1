@@ -64,7 +64,7 @@ function Contactus() {
   return (
     <div>
       <div
-        className=" w-full min-h-screen h-auto pb-10 bg-cover "
+        className=" w-full min-h-screen h-auto pb-10 bg-center "
         style={{
           backgroundImage: isMobile ? `url(${mobilebg})` : `url(${bg})`,
           backgroundSize: "cover",
