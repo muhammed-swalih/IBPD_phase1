@@ -10,14 +10,14 @@ function LandingPage() {
   return (
     <div className=" md:w-full h-screen bg-black md:mb-20">
       <div
-        className="w-full h-screen  bg-cover  md:w-full md:h-[900px] md:bg-cover md:relative "
+        className="w-full h-screen  bg-cover  md:w-full md:h-[900px] md:bg-cover  "
         style={{
           backgroundImage: isMobile ? `url(${moblieBg})` : `url(${bg})`,
           backgroundSize: "cover",
         }}
       >
         <Navbar />
-        <div className=" h-3/4 flex items-center ">
+        <div className=" h-2/4 flex items-center ">
           <div className=" w-96  md:flex md:justify-start  md:w-[600px] md:px-10   md:h-72  bg-black bg-opacity-50 flex">
             <div className=" flex flex-col gap-2 text-white">
               <img

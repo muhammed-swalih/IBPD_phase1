@@ -18,7 +18,6 @@ function HomePage() {
       <HomeAboutUs />
       <WhatIBPDHas />
       <NoMatterHowFar />
-
       <Global />
       <OurCorePillers />
 
