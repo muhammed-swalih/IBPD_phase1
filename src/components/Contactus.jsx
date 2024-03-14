@@ -60,14 +60,14 @@ function Contactus() {
   return (
     <div>
       <div
-        className=" w-full h-screen bg-cover"
+        className=" w-full min-h-screen h-auto pb-10 bg-cover "
         style={{ backgroundImage: `url(${bg})`, backgroundSize: "cover" }}
       >
         <Navbar />
-        <div className=" w-full h-screen pt-32 flex items-center px-20">
-          <div className=" flex justify-between w-full text-white h-full items-center ">
+        <div className=" w-full   flex items-center px-20 ">
+          <div className=" flex justify-between w-full sm:text-red-500 md:text-white h-full items-center ">
             <div className=" flex flex-col gap-10">
-              <h1 className=" text-6xl font-semibold">Contact us</h1>
+              <h1 className=" text-4xl font-semibold">Contact us</h1>
               <div className=" flex flex-col gap- ">
                 <div className=" flex gap-2 items-start ml-5">
                   <h1 className=" text-2xl mt-1">
@@ -100,7 +100,7 @@ function Contactus() {
               </div>
             </div>
             <div className="  h-[500px]  bg-white bg-opacity-70 rounded-lg text-black w-[400px]">
-              <div className="px-10 py-10 flex flex-col gap-4 relative">
+              <div className="px-10 py-10 flex flex-col gap-4">
                 <h1 className=" text-2xl">For general enquiries</h1>
                 <TextField
                   value={formData.name}
@@ -129,12 +129,12 @@ function Contactus() {
                   placeholder="Message"
                   cols=""
                   rows="3"
-                  className=" absolute top-[310px] w-[320px] border border-gray-500 rounded-lg px-3 text-black py-3 bg-white bg-opacity-0 "
+                  className="  w-[320px] border border-gray-500 rounded-lg px-3 text-black py-3 bg-white bg-opacity-0 "
                 ></textarea>
                 <button
                   type="submit"
                   onClick={handleSubmit}
-                  className=" flex items-center justify-center w-auto px-10 h-12 rounded-lg bg-[#303030] cursor-pointer absolute top-[430px] "
+                  className=" flex items-center justify-center w-auto px-10 h-12 rounded-lg bg-[#303030] cursor-pointer "
                 >
                   <h1 className=" text-white">Submit</h1>
                 </button>

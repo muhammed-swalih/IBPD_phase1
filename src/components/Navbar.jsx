@@ -20,11 +20,11 @@ function Navbar() {
     navigate("/programs");
   };
 
-  const navToContact = () =>{
-    navigate("/contact")
-  }
+  const navToContact = () => {
+    navigate("/contact");
+  };
   return (
-    <div className=" w-full md:w-full md:h-full md:absolute ">
+    <div className=" w-full  ">
       <div className=" ">
         <div className=" bg-black flex items-center h-36 justify-between px-5 md:w-full md:bg-transparent md:h-full md:px-10 md:flex  md:justify-between">
           <div
