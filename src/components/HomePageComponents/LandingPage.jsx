@@ -4,9 +4,9 @@ import bookMark from "../../assets/bookmark.png";
 import Navbar from "../Navbar";
 function LandingPage() {
   return (
-    <div className=" md:w-full h-screen bg-black">
+    <div className=" md:w-full h-screen bg-black mb-20">
       <div
-        className="w-full h-screen bg-cover  md:w-full md:h-screen md:bg-cover md:relative "
+        className="w-full  bg-cover  md:w-full md:h-[900px] md:bg-cover md:relative "
         style={{ backgroundImage: `url(${bg})`, backgroundSize: "cover" }}
       >
         <Navbar />
