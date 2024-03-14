@@ -46,7 +46,7 @@ function Navbar() {
             <img
               src={LOGO}
               alt=""
-              className="w-40 h-40 md:w-52 md:h-52 object-cover"
+              className="w-40 h-40 md:w-60 md:h-60 object-cover"
             />
           </div>
           <div className=" text-white md:hidden ">
