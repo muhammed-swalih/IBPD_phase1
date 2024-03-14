@@ -2,7 +2,7 @@ import React from "react";
 
 function Qualitys() {
   return (
-    <div className=" pl-10  w-full md:pt-10 py-10 bg-white md:pl-0    md:flex  items-start justify-center  md:gap-20 text-[#303030]">
+    <div className=" pl-10  w-full md:pt-10 py-10 md:py-5 bg-white md:pl-0    md:flex  items-start justify-center  md:gap-20 text-[#303030]">
       <div className=" flex flex-col gap-2 w-80 justify-center mb-6 md:mb-0">
         <h1 className=" text-3xl font-semibold">Quality</h1>
         <div className=" flex flex-col gap-3 ">

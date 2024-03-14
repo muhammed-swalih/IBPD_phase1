@@ -10,7 +10,7 @@ function HomeAboutUs() {
 
   if (isMobile) {
     return (
-      <div className=" w-full px-10 text-white py-10 bg-black">
+      <div className=" w-full px-10 text-white py-10  bg-black">
         <div className=" flex flex-col gap-3">
           <h1 className=" text-2xl font-semibold ">
             Let's delve deeper into the concept of "Global Recognition and
@@ -30,7 +30,7 @@ function HomeAboutUs() {
   }
 
   return (
-    <div className=" w-full h-auto bg-[#EBEBEB] pt-24  pb-20">
+    <div className=" w-full h-auto bg-[#EBEBEB] pt-8  pb-20">
       <div className=" flex items-center ">
         <div className=" flex items-center justify-between w-full">
           <div className=" w-full h-[430px] bg-white z-50 ">

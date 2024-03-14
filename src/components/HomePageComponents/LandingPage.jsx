@@ -8,9 +8,9 @@ function LandingPage() {
   const isMobile = useMediaQuery("(max-width: 639px)");
 
   return (
-    <div className=" md:w-full h-screen bg-black md:mb-20">
+    <div className=" md:w-full  bg-black relative">
       <div
-        className="w-full h-screen  bg-cover  md:w-full md:h-[900px] md:bg-cover  "
+        className="w-full h-screen  bg-cover  md:w-full md:h-[1000px] md:bg-cover  "
         style={{
           backgroundImage: isMobile ? `url(${moblieBg})` : `url(${bg})`,
           backgroundSize: "cover",
