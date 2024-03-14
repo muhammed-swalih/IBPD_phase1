@@ -1,22 +1,25 @@
 import React from "react";
 import Navbar from "../Navbar";
-import aboutBg from "../../assets/About_new.webp";
+import aboutBg from "../../assets/aboutus_bg.webp";
 import Footer from "../Footer";
 
 function AboutLanding() {
   return (
-    <div
-      className=" w-full h-screen bg-cover bg-black"
-      style={{ backgroundImage: `url(${aboutBg})`, backgroundSize: "cover" }}
-    >
-      <Navbar />
-      <div className=" w-full h-3/4 flex items-center justify-center">
-        <div className=" flex flex-col gap-3 text-white items-center">
-          <h1 className=" text-6xl font-semibold ">About us</h1>
-          <h1 className="w-[650px] text-lg text-center">
-            Welcome to Imperial Board for Professional Development UK. Decades
-            of Dedication to ensure excellence in education across 18 Countries.{" "}
-          </h1>
+    <div>
+      <div
+        className=" w-full h-[1000px] bg-cover bg-black"
+        style={{ backgroundImage: `url(${aboutBg})`, backgroundSize: "cover" }}
+      >
+        <Navbar />
+        <div className=" w-full h-2/4 flex items-center justify-center">
+          <div className=" flex flex-col gap-3 text-white items-center">
+            <h1 className=" text-6xl font-semibold ">About us</h1>
+            <h1 className="w-[650px] text-lg text-center">
+              Welcome to Imperial Board for Professional Development UK. Decades
+              of Dedication to ensure excellence in education across 18
+              Countries.{" "}
+            </h1>
+          </div>
         </div>
       </div>
       <div className="  w-full h-auto">

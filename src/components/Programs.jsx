@@ -23,16 +23,16 @@ import { BsArrowRightShort } from "react-icons/bs";
 
 function Programs() {
   return (
-    <div className=" w-auto h-auto">
+    <div className=" w-auto ">
       <div
-        className=" w-full h-screen bg-cover"
+        className=" w-full h-[1000px] bg-cover"
         style={{
           backgroundImage: `url(${programsBg})`,
           backgroundSize: "cover",
         }}
       >
         <Navbar />
-        <div className=" w-full h-3/4 flex items-center justify-center">
+        <div className=" w-full h-2/4 flex items-center justify-center">
           <div className=" flex flex-col gap-3 items-center text-white">
             <h1 className=" text-6xl font-semibold">Programs</h1>
             <h1 className="w-[650px] text-lg text-center">
