@@ -1,5 +1,5 @@
 import React from "react";
-import partnerBg from "../../assets/webp/partners_bg.webp";
+import partnerBg from "../../assets/partner_new.webp";
 import Navbar from "../Navbar";
 import Footer from "../Footer";
 
@@ -10,7 +10,7 @@ function PartnerLandingPage() {
       style={{ backgroundImage: `url(${partnerBg})` }}
     >
       <Navbar />
-      <div className=" text-white w-full h-full flex items-center justify-center">
+      <div className=" text-white w-full h-3/4 flex items-center justify-center">
         <div className=" flex flex-col gap-3 items-center">
           <h1 className=" text-6xl font-semibold">Become a partner</h1>
           <h1 className="w-[650px] text-lg text-center">

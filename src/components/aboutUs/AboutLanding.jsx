@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "../Navbar";
-import aboutBg from "../../assets/aboutus_bg.webp";
+import aboutBg from "../../assets/About_new.webp";
 import Footer from "../Footer";
 
 function AboutLanding() {
@@ -10,7 +10,7 @@ function AboutLanding() {
       style={{ backgroundImage: `url(${aboutBg})`, backgroundSize: "cover" }}
     >
       <Navbar />
-      <div className=" w-full h-full flex items-center justify-center">
+      <div className=" w-full h-3/4 flex items-center justify-center">
         <div className=" flex flex-col gap-3 text-white items-center">
           <h1 className=" text-6xl font-semibold ">About us</h1>
           <h1 className="w-[650px] text-lg text-center">

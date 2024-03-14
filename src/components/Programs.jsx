@@ -1,5 +1,5 @@
 import React from "react";
-import programsBg from "../assets/programs.webp";
+import programsBg from "../assets/programs_new.webp";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import { FcBusinessman } from "react-icons/fc";
@@ -32,7 +32,7 @@ function Programs() {
         }}
       >
         <Navbar />
-        <div className=" w-full h-full flex items-center justify-center">
+        <div className=" w-full h-3/4 flex items-center justify-center">
           <div className=" flex flex-col gap-3 items-center text-white">
             <h1 className=" text-6xl font-semibold">Programs</h1>
             <h1 className="w-[650px] text-lg text-center">
