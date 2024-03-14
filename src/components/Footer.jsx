@@ -3,8 +3,28 @@ import LOGO from "../assets/footer_logo.webp";
 import { MdLocationOn } from "react-icons/md";
 import { IoMail } from "react-icons/io5";
 import { useMediaQuery } from "@react-hook/media-query";
+import { useNavigate } from "react-router-dom";
 
 function Footer() {
+  const navigate = useNavigate();
+  const navToAbout = () => {
+    navigate("/about");
+  };
+
+  const navToPartner = () => {
+    navigate("/partner");
+  };
+  const navToHome = () => {
+    navigate("/");
+  };
+
+  const navToPrograms = () => {
+    navigate("/programs");
+  };
+
+  const navToContact = () => {
+    navigate("/contact");
+  };
   const isMobile = useMediaQuery("(max-width: 639px)");
 
   if (isMobile) {
@@ -47,11 +67,11 @@ function Footer() {
   return (
     <div className=" w-full h-auto pt-10 pb-5 flex px-32 justify-center gap-20 bg-black">
       <div className=" w-1/2 h-full flex flex-col justify-center items-start ">
-        <div className=" w-80 h-36">
+        <div className=" w-[400px] h-36 ">
           <img src={LOGO} width={500} alt="" />
         </div>
         <div>
-          <h1 className=" text-white text-sm">
+          <h1 className=" text-white text-xs">
             Copyright ©2024 Imperial Board for Professional Development UK
           </h1>
         </div>
@@ -59,11 +79,22 @@ function Footer() {
       <div className=" flex items-start gap-10 justify-center text-white w-1/2">
         <div className=" flex flex-col gap-2">
           <h1 className=" font-semibold">Menu</h1>
-          <div>
-            <h1>Home</h1>
-            <h1>About</h1>
-            <h1>Partners</h1>
-            <h1>Programs</h1>
+          <div className=" text-sm flex flex-col gap-1">
+            <h1 className=" cursor-pointer" onClick={navToHome}>
+              Home
+            </h1>
+            <h1 className=" cursor-pointer" onClick={navToAbout}>
+              About
+            </h1>
+            <h1 className=" cursor-pointer" onClick={navToPartner}>
+              Partners
+            </h1>
+            <h1 className=" cursor-pointer" onClick={navToPrograms}>
+              Programs
+            </h1>
+            <h1 className=" cursor-pointer" onClick={navToContact}>
+              Contact
+            </h1>
           </div>
         </div>
         <div className="flex gap-5 items-start">
@@ -75,9 +106,7 @@ function Footer() {
                 <MdLocationOn />
               </h1>
               <h1 className=" text-sm">
-                Office 128, City Road, London,
-                <br />
-                EC1V 2NX, UNITED KINGDOM
+                Office 128, City Road, <br /> London, EC1V 2NX, UNITED KINGDOM
               </h1>
             </div>
             <div>
@@ -86,7 +115,7 @@ function Footer() {
                 <h1>
                   <IoMail />
                 </h1>
-                <h1>Info@ibpd.org</h1>
+                <h1 className=" text-sm">Info@ibpd.org</h1>
               </div>
             </div>
           </div>
