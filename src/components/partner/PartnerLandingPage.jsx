@@ -83,26 +83,26 @@ function PartnerLandingPage() {
               <span className="  font-semibold"> Info@IBPD.org</span>
             </h1>
             <div className=" mt-5 flex flex-col md:w-[1000px] gap-5 text-white">
-              <div className=" flex items-center gap-5 md:gap-7 px-6 h-14 bg-black rounded-3xl">
+              <div className=" flex items-center gap-5 md:gap-6 px-6 h-14 bg-black rounded-3xl md:w-[600px]">
                 <h1 className=" md:text-xl text-gray-300">Step 1</h1>
                 <div className=" w-[1px] h-full bg-white"></div>
-                <h1 className=" md:text-xl md:font-semibold">
+                <h1 className=" md:ml-[-5px] md:text-xl md:font-semibold">
                   Application (EOI)
                 </h1>
               </div>
-              <div className=" flex items-center px-6 gap-5 h-14 bg-black rounded-3xl">
+              <div className=" flex items-center px-6 gap-5 h-14 bg-black rounded-3xl md:w-[600px]">
                 <h1 className="  md:text-xl text-gray-300">Step 2</h1>
                 <div className=" w-[1px] h-full bg-white"></div>
                 <h1 className=" md:text-xl md:font-semibold">Assessment </h1>
               </div>
-              <div className=" flex items-center gap-5 px-6 h-14 bg-black rounded-3xl">
+              <div className=" flex items-center gap-5 px-6 h-14 bg-black rounded-3xl md:w-[600px]">
                 <h1 className="  md:text-xl text-gray-300">Step 3</h1>
                 <div className=" w-[1px] h-full bg-white"></div>
                 <h1 className=" md:text-xl md:font-semibold">
                   Eligibility Decision
                 </h1>
               </div>
-              <div className=" flex items-center gap-3 px-6 h-14 md:h-14 bg-black rounded-3xl">
+              <div className=" flex items-center gap-3 md:gap-5 px-6 h-14 md:h-14 bg-black rounded-3xl md:w-[600px]">
                 <h1 className="  w-[53px] md:w-auto md:text-xl text-gray-300 ">
                   Step 4
                 </h1>
@@ -111,17 +111,17 @@ function PartnerLandingPage() {
                   Formal Discussion & Presentation
                 </h1>
               </div>
-              <div className=" flex items-center gap-5 px-6 h-14 bg-black rounded-3xl">
+              <div className=" flex items-center gap-5 px-6 h-14 bg-black rounded-3xl md:w-[600px]">
                 <h1 className="  md:text-xl text-gray-300">Step 5</h1>
                 <div className=" w-[1px] h-full bg-white"></div>
                 <h1 className=" md:text-xl md:font-semibold">Final Decision</h1>
               </div>
-              <div className=" flex items-center gap-5 px-6 h-14 bg-black rounded-3xl">
+              <div className=" flex items-center gap-5 px-6 h-14 bg-black rounded-3xl md:w-[600px]">
                 <h1 className="  md:text-xl text-gray-300">Step 6</h1>
                 <div className=" w-[1px] h-full bg-white"></div>
                 <h1 className=" md:text-xl md:font-semibold">Payment</h1>
               </div>
-              <div className=" flex items-center gap-5 px-6 h-14 bg-green-600 md:bg-green-600 rounded-3xl">
+              <div className=" flex items-center gap-5 px-6 h-14 bg-green-600 md:bg-green-600 rounded-3xl md:w-[600px]">
                 <h1 className="  md:text-xl text-gray-300">Step 7</h1>
                 <div className=" w-[1px] h-full bg-white"></div>
                 <h1 className=" md:text-xl md:font-semibold">Agreement</h1>
