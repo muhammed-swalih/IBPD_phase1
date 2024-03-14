@@ -35,7 +35,7 @@ function Programs() {
         <div className=" w-full h-2/4 flex items-center justify-center">
           <div className=" flex flex-col gap-3 items-center text-white">
             <h1 className=" text-4xl md:text-6xl font-semibold">Programs</h1>
-            <h1 className="px-10 md:w-[650px] text-lg text-center">
+            <h1 className="px-10 w-[400px] md:w-[750px] text-lg text-center">
               At IBPD, we offer a diverse range of courses designed to cater to
               the evolving needs of professionals across various industries.
             </h1>
