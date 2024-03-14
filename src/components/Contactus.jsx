@@ -1,15 +1,19 @@
 import React, { useState } from "react";
 import bg from "../assets/contact_bg.webp";
 import Navbar from "./Navbar";
+import mobilebg from "../assets/contact_bg.webp";
 import { FaLocationDot } from "react-icons/fa6";
 import { BsFillTelephoneFill } from "react-icons/bs";
 import { IoMail } from "react-icons/io5";
 import { TextField } from "@mui/material";
 import emailjs from "emailjs-com";
+import { useMediaQuery } from "@react-hook/media-query";
 
 import Footer from "./Footer";
 
 function Contactus() {
+  const isMobile = useMediaQuery("(max-width: 639px)");
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -61,11 +65,14 @@ function Contactus() {
     <div>
       <div
         className=" w-full min-h-screen h-auto pb-10 bg-cover "
-        style={{ backgroundImage: `url(${bg})`, backgroundSize: "cover" }}
+        style={{
+          backgroundImage: isMobile ? `url(${mobilebg})` : `url(${bg})`,
+          backgroundSize: "cover",
+        }}
       >
         <Navbar />
-        <div className=" w-full   flex items-center px-20 ">
-          <div className=" flex justify-between w-full sm:text-red-500 md:text-white h-full items-center ">
+        <div className=" w-full py-10 md:py-0   md:flex md:items-center md:px-20 ">
+          <div className=" px-5 md:px-0  md:flex md:justify-between w-full  text-white h-full items-center ">
             <div className=" flex flex-col gap-10">
               <h1 className=" text-4xl font-semibold">Contact us</h1>
               <div className=" flex flex-col gap- ">
@@ -83,7 +90,7 @@ function Contactus() {
                   </div>
                 </div>
               </div>
-              <div className=" flex flex-col gap-3 text-white">
+              <div className="    md:my-0 flex flex-col gap-3 text-white">
                 <h1>To Discuss Partnership opportunities with IBPD:</h1>
                 <div className=" flex gap-3 items-center ml-5">
                   <h1 className="  text-2xl">
@@ -99,7 +106,7 @@ function Contactus() {
                 </div>
               </div>
             </div>
-            <div className="  h-[500px]  bg-white bg-opacity-70 rounded-lg text-black w-[400px]">
+            <div className=" my-10 md:my-0 h-[500px]  bg-white bg-opacity-70 rounded-lg text-black md:w-[400px]">
               <div className="px-10 py-10 flex flex-col gap-4">
                 <h1 className=" text-2xl">For general enquiries</h1>
                 <TextField

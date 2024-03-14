@@ -1,13 +1,20 @@
 import React from "react";
 import bg from "../../assets/homebg.webp";
 import bookMark from "../../assets/bookmark.png";
+import moblieBg from "../../assets/mobile_homebg.webp";
 import Navbar from "../Navbar";
+import { useMediaQuery } from "@react-hook/media-query";
 function LandingPage() {
+  const isMobile = useMediaQuery("(max-width: 639px)");
+
   return (
-    <div className=" md:w-full h-screen bg-black mb-20">
+    <div className=" md:w-full h-screen bg-black md:mb-20">
       <div
-        className="w-full  bg-cover  md:w-full md:h-[900px] md:bg-cover md:relative "
-        style={{ backgroundImage: `url(${bg})`, backgroundSize: "cover" }}
+        className="w-full h-screen  bg-cover  md:w-full md:h-[900px] md:bg-cover md:relative "
+        style={{
+          backgroundImage: isMobile ? `url(${moblieBg})` : `url(${bg})`,
+          backgroundSize: "cover",
+        }}
       >
         <Navbar />
         <div className=" h-3/4 flex items-center ">

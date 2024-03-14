@@ -19,7 +19,7 @@ function Global() {
           <div className=" flex items-center ">
             <div className=" flex flex-col  ">
               <div className=" flex gap-4 md:items-center">
-                <h1 className=" text-xl bg-black w-full px-2 rounded-lg py-2 text-white">
+                <h1 className="w-auto px-6 text-xl bg-black md:w-full md:px-2 rounded-lg py-2 text-white">
                   Tailored Learning Experience
                 </h1>
               </div>
@@ -34,7 +34,7 @@ function Global() {
           <div className=" flex items-center gap-3">
             <div className=" flex flex-col gap-">
               <div className=" flex gap-4 items-center">
-                <h1 className="  text-xl bg-black w-full px-2 rounded-lg py-2 text-white">
+                <h1 className=" w-[330px] px-6  text-xl bg-black md:w-full md:px-2 rounded-lg py-2 text-white">
                   Mentorship and Guidance
                 </h1>
               </div>
@@ -49,11 +49,11 @@ function Global() {
           <div className=" flex items-center gap-3">
             <div className=" flex flex-col gap-">
               <div className=" flex gap-4 items-center">
-                <h1 className=" text-xl  bg-black w-full px-2 rounded-lg py-2 text-white">
+                <h1 className="w-[330px] px-6 text-xl  bg-black md:w-full md:px-2 rounded-lg py-2 text-white">
                   Dynamic Networking
                 </h1>
               </div>
-              <h1 className=" pl-2 pr-10 md:pr-0 mt-2 md:w-[830px] text-justify ">
+              <h1 className="  pl-2 pr-10 md:pr-0 mt-2 md:w-[830px] text-justify ">
                 Join a vibrant community of ambitious individuals who, like you,
                 are committed to continuous growth. Network with peers,
                 collaborate on projects, and create lasting connections that
@@ -64,7 +64,7 @@ function Global() {
           <div className=" flex items-center gap-3">
             <div className=" flex flex-col gap-">
               <div className=" flex gap-4 items-center">
-                <h1 className=" text-xl bg-black w-full px-2 rounded-lg py-2 text-white ">
+                <h1 className=" w-[330px] px-6 text-xl bg-black md:w-full md:px-2 rounded-lg py-2 text-white ">
                   Cutting-edge Resources:
                 </h1>
               </div>
@@ -79,7 +79,7 @@ function Global() {
           <div className=" flex items-center gap-3">
             <div className=" flex flex-col gap-">
               <div className=" flex gap-4 items-center">
-                <h1 className=" text-xl bg-black w-full px-2 rounded-lg py-2 text-white ">
+                <h1 className=" w-[330px] px-6 text-xl bg-black md:w-full md:px-2 rounded-lg py-2 text-white ">
                   Recognition of Excellence:
                 </h1>
               </div>

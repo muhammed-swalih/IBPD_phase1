@@ -1,9 +1,21 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import LOGO from "../assets/logo.webp";
 import { useNavigate } from "react-router-dom";
 import { IoMenu } from "react-icons/io5";
 
 function Navbar() {
+  const [isMenuIconsclicked, setisMenuIconsclicked] = useState(false);
+  const [menuHeight, setMenuHeight] = useState(0);
+  const menuRef = useRef(null);
+
+  useEffect(() => {
+    setMenuHeight(isMenuIconsclicked ? menuRef.current.scrollHeight : 0);
+  }, [isMenuIconsclicked]);
+
+  const toggleMenu = () => {
+    setisMenuIconsclicked(!isMenuIconsclicked);
+  };
+
   const navigate = useNavigate();
   const navToAbout = () => {
     navigate("/about");
@@ -26,15 +38,19 @@ function Navbar() {
   return (
     <div className=" w-full  ">
       <div className=" ">
-        <div className=" bg-black flex items-center h-36 justify-between px-5 md:w-full md:bg-transparent md:h-full md:px-10 md:flex  md:justify-between">
+        <div className=" bg-black flex items-center  justify-between px-5 md:w-full md:bg-transparent md:h-full md:px-10 md:flex  md:justify-between">
           <div
             onClick={navToHome}
-            className=" w-32   md:w-40 md:h-44 bg-black md:bg-opacity-75 md:flex md:items-center md:justify-center drop-shadow-lg"
+            className=" w-32 flex items-center  h-32 md:w-40 md:h-44 bg-black md:bg-opacity-75 md:flex md:items-center md:justify-center drop-shadow-lg"
           >
-            <img src={LOGO} alt="" className="w-52 h-52 object-cover" />
+            <img
+              src={LOGO}
+              alt=""
+              className="w-40 h-40 md:52 md:52 object-cover"
+            />
           </div>
           <div className=" text-white md:hidden ">
-            <h1 className=" text-5xl">
+            <h1 onClick={toggleMenu} className=" text-5xl">
               <IoMenu />
             </h1>
           </div>
@@ -87,6 +103,28 @@ function Navbar() {
                   </span>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+        <div
+          ref={menuRef}
+          className="w-full h-80 overflow-hidden mb-5 "
+          style={{
+            height: `${menuHeight}px`,
+            transition: "height 0.3s ease-in-out",
+          }}
+        >
+          <div className=" w-full   py-5 bg-white flex items-center justify-start px-5  md:hidden">
+            <div className=" flex flex-col gap-2 w-full">
+              <h1 onClick={navToHome} className=" text-xl font-semibold">Home</h1>
+              <hr className=" " />
+              <h1 onClick={navToAbout} className=" text-xl font-semibold">About us</h1>
+              <hr />
+              <h1 onClick={navToPartner} className=" text-xl font-semibold">Partners</h1>
+              <hr />
+              <h1 onClick={navToPrograms} className=" text-xl font-semibold">Programs</h1>
+              <hr />
+              <h1 onClick={navToContact} className=" text-xl font-semibold">Contact</h1>
             </div>
           </div>
         </div>

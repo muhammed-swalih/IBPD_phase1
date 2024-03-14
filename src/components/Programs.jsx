@@ -25,7 +25,7 @@ function Programs() {
   return (
     <div className=" w-auto ">
       <div
-        className=" w-full h-[1000px] bg-cover"
+        className=" w-full h-[400px] md:h-[1000px] bg-cover"
         style={{
           backgroundImage: `url(${programsBg})`,
           backgroundSize: "cover",
@@ -34,18 +34,18 @@ function Programs() {
         <Navbar />
         <div className=" w-full h-2/4 flex items-center justify-center">
           <div className=" flex flex-col gap-3 items-center text-white">
-            <h1 className=" text-6xl font-semibold">Programs</h1>
-            <h1 className="w-[650px] text-lg text-center">
+            <h1 className=" text-4xl md:text-6xl font-semibold">Programs</h1>
+            <h1 className="px-10 md:w-[650px] text-lg text-center">
               At IBPD, we offer a diverse range of courses designed to cater to
               the evolving needs of professionals across various industries.
             </h1>
           </div>
         </div>
       </div>
-      <div className=" px-32 py-10">
+      <div className=" md:px-32 py-10">
         <div className=" flex gap-10 items-start text-sm">
-          <div className=" flex flex-col gap-8">
-            <h1 className=" w-[1000px] text-justify">
+          <div className="px-5 md:px-0 flex flex-col gap-8">
+            <h1 className=" md:w-[1000px] text-justify">
               At IBPD, we offer a diverse range of courses designed to cater to
               the evolving needs of professionals across various industries. Our
               curriculum is meticulously crafted to provide a holistic learning
@@ -57,105 +57,105 @@ function Programs() {
               pinnacle of their professions. Here is a glimpse of the courses
               you can expect to find at IBPD.
             </h1>
-            <div className=" pl-5 flex flex-col gap-5 text-white">
-              <div className=" rounded-2xl w-[500px] h-14 bg-black flex gap-4 px-5 items-center">
+            <div className=" md:pl-5 flex flex-col gap-5 text-white">
+              <div className=" rounded-2xl md:w-[500px] h-14 bg-black flex gap-4 px-5 items-center">
                 <h1 className=" text-3xl">
                   <FcBusinessman />
                 </h1>
                 <h1>Business and management</h1>
               </div>
-              <div className=" rounded-2xl w-[500px] h-14 bg-black flex gap-4 px-5 items-center">
+              <div className=" rounded-2xl md:w-[500px] h-14 bg-black flex gap-4 px-5 items-center">
                 <h1 className=" text-3xl">
                   <FcAdvertising />
                 </h1>
                 <h1>Marketing</h1>
               </div>
-              <div className=" rounded-2xl w-[500px] h-14 bg-black flex gap-4 px-5 items-center">
+              <div className=" rounded-2xl md:w-[500px] h-14 bg-black flex gap-4 px-5 items-center">
                 <h1 className=" text-3xl">
                   <TbRibbonHealth />
                 </h1>
                 <h1>Health and safety management</h1>
               </div>
-              <div className=" rounded-2xl w-[500px] h-14 bg-black flex gap-4 px-5 items-center">
+              <div className=" rounded-2xl md:w-[500px] h-14 bg-black flex gap-4 px-5 items-center">
                 <h1 className=" text-3xl">
                   <SiYourtraveldottv />
                 </h1>
                 <h1>Hospitality and tourism management</h1>
               </div>
-              <div className=" rounded-2xl w-[500px] h-14 bg-black flex gap-4 px-5 items-center">
+              <div className=" rounded-2xl md:w-[500px] h-14 bg-black flex gap-4 px-5 items-center">
                 <h1 className=" text-3xl">
                   <MdAccountBalance />
                 </h1>
                 <h1>Accounting and finance</h1>
               </div>
-              <div className=" rounded-2xl w-[500px] h-14 bg-black flex gap-4 px-5 items-center">
+              <div className=" rounded-2xl md:w-[500px] h-14 bg-black flex gap-4 px-5 items-center">
                 <h1 className=" text-3xl">
                   <GrTechnology />
                 </h1>
                 <h1>Information technology</h1>
               </div>
-              <div className=" rounded-2xl w-[500px] h-14 bg-black flex gap-4 px-5 items-center">
+              <div className=" rounded-2xl md:w-[500px] h-14 bg-black flex gap-4 px-5 items-center">
                 <h1 className=" text-3xl">
                   <MdManageHistory />
                 </h1>
                 <h1>Project management</h1>
               </div>
-              <div className=" rounded-2xl w-[500px] h-14 bg-black flex gap-4 px-5 items-center">
+              <div className=" rounded-2xl md:w-[500px] h-14 bg-black flex gap-4 px-5 items-center">
                 <h1 className=" text-3xl">
                   <ImDatabase />
                 </h1>
                 <h1>Data science</h1>
               </div>
-              <div className=" rounded-2xl w-[500px] h-14 bg-black flex gap-4 px-5 items-center">
+              <div className=" rounded-2xl md:w-[500px] h-14 bg-black flex gap-4 px-5 items-center">
                 <h1 className=" text-3xl">
                   <SiCyberdefenders />
                 </h1>
                 <h1>Cyber security</h1>
               </div>
-              <div className=" rounded-2xl w-[500px] h-14 bg-black flex gap-4 px-5 items-center">
+              <div className=" rounded-2xl md:w-[500px] h-14 bg-black flex gap-4 px-5 items-center">
                 <h1 className=" text-3xl">
                   <GiArtificialIntelligence />
                 </h1>
                 <h1>Artificial intelligence</h1>
               </div>
-              <div className=" rounded-2xl w-[500px] h-14 bg-black flex gap-4 px-5 items-center">
+              <div className=" rounded-2xl md:w-[500px] h-14 bg-black flex gap-4 px-5 items-center">
                 <h1 className=" text-3xl">
                   <MdModelTraining />
                 </h1>
                 <h1>Education and training</h1>
               </div>
-              <div className=" rounded-2xl w-[500px] h-14 bg-black flex gap-4 px-5 items-center">
+              <div className=" rounded-2xl md:w-[500px] h-14 bg-black flex gap-4 px-5 items-center">
                 <h1 className=" text-3xl">
                   <SiHiveBlockchain />
                 </h1>
                 <h1>Logistics and supply chain management</h1>
               </div>
-              <div className=" rounded-2xl w-[500px] h-14 bg-black flex gap-4 px-5 items-center">
+              <div className=" rounded-2xl md:w-[500px] h-14 bg-black flex gap-4 px-5 items-center">
                 <h1 className=" text-3xl">
                   <FaGraduationCap />
                 </h1>
                 <h1>Early years education</h1>
               </div>
-              <div className=" rounded-2xl w-[500px] h-14 bg-black flex gap-4 px-5 items-center">
+              <div className=" rounded-2xl md:w-[500px] h-14 bg-black flex gap-4 px-5 items-center">
                 <h1 className=" text-3xl">
                   <TbMessageLanguage />
                 </h1>
                 <h1>Communicative english & language studies</h1>
               </div>
-              <div className=" rounded-2xl w-[500px] h-14 bg-black flex gap-4 px-5 items-center">
+              <div className=" rounded-2xl md:w-[500px] h-14 bg-black flex gap-4 px-5 items-center">
                 <h1 className=" text-3xl">
                   <PiPersonArmsSpreadFill />
                 </h1>
                 <h1>Personality studies</h1>
               </div>
-              <div className=" rounded-2xl w-[500px] h-14 bg-black flex gap-4 px-5 items-center">
+              <div className=" rounded-2xl md:w-[500px] h-14 bg-black flex gap-4 px-5 items-center">
                 <h1 className=" text-3xl">
                   <MdHealthAndSafety />
                 </h1>
                 <h1>Health and wellness</h1>
               </div>
             </div>
-            <h1 className=" w-[1000px] text-justify">
+            <h1 className=" md:w-[1000px] text-justify">
               These courses represent just a snapshot of the extensive offerings
               at IBPD. Our commitment is to empower you with the knowledge and
               skills necessary for success in today's dynamic professional

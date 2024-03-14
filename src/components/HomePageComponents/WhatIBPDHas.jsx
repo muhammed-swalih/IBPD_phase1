@@ -5,9 +5,9 @@ function WhatIBPDHas() {
     <div className=" w-full h-auto pt-10 md:pt-0 pb-10">
       <div className=" flex flex-col gap-10">
         <div className=" flex gap-5 items-center w-full justify-center md:justify-start">
-          <hr className=" border-black border-2 w-[55px] hidden md:block" />
+          <hr className=" border-black border-2  w-[55px] hidden md:block" />
           <div className=" flex flex-col gap-5 ">
-            <h1 className=" text-2xl md:text-4xl w-[620px] text-[#303030] font-semibold px-10 md:px-0 text-center md:text-start">
+            <h1 className=" text-2xl w-80 md:text-4xl md:w-[620px] text-[#303030] font-semibold px-10 md:px-0 text-center md:text-start">
               Our commitments to the partners
             </h1>
             <hr className=" border-gray-300  md:hidden" />
