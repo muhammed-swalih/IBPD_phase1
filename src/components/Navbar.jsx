@@ -46,7 +46,7 @@ function Navbar() {
             <img
               src={LOGO}
               alt=""
-              className="w-40 h-40 md:52 md:52 object-cover"
+              className="w-40 h-40 md:w-52 md:h-52 object-cover"
             />
           </div>
           <div className=" text-white md:hidden ">
@@ -116,15 +116,25 @@ function Navbar() {
         >
           <div className=" w-full   py-5 bg-white flex items-center justify-start px-5  md:hidden">
             <div className=" flex flex-col gap-2 w-full">
-              <h1 onClick={navToHome} className=" text-xl font-semibold">Home</h1>
+              <h1 onClick={navToHome} className=" text-xl font-semibold">
+                Home
+              </h1>
               <hr className=" " />
-              <h1 onClick={navToAbout} className=" text-xl font-semibold">About us</h1>
+              <h1 onClick={navToAbout} className=" text-xl font-semibold">
+                About us
+              </h1>
               <hr />
-              <h1 onClick={navToPartner} className=" text-xl font-semibold">Partners</h1>
+              <h1 onClick={navToPartner} className=" text-xl font-semibold">
+                Partners
+              </h1>
               <hr />
-              <h1 onClick={navToPrograms} className=" text-xl font-semibold">Programs</h1>
+              <h1 onClick={navToPrograms} className=" text-xl font-semibold">
+                Programs
+              </h1>
               <hr />
-              <h1 onClick={navToContact} className=" text-xl font-semibold">Contact</h1>
+              <h1 onClick={navToContact} className=" text-xl font-semibold">
+                Contact
+              </h1>
             </div>
           </div>
         </div>
