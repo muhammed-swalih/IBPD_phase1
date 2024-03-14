@@ -106,7 +106,8 @@ function Footer() {
                 <MdLocationOn />
               </h1>
               <h1 className=" text-sm">
-                Office 128, City Road, <br /> London, EC1V 2NX, UNITED KINGDOM
+                Office 128, City Road, <br /> London, EC1V 2NX, <br />{" "}
+                UNITED KINGDOM
               </h1>
             </div>
             <div>
